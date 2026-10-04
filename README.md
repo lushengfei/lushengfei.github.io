@@ -1,2 +1,2 @@
 # lushengfei.github.io
-My personal websit, hope it works.
+My personal website, hope it works.
