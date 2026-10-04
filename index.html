@@ -6,33 +6,19 @@
   <title>Shengfei Lu</title>
   <meta name="description" content="Shengfei Lu, Financial Economics student at the University of Toronto, interested in macroeconomics and international finance.">
 
-
-
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --paper: #F8F3EE;
-      --ink: #2B211C;
-      --muted: #6E5F55;
-      --rule: #E2D6CB;
-      --accent: #8A2E35;
+      --paper: #F2F4F7;   /* page background (U of T light grey) */
+      --ink: #1C2333;     /* main text */
+      --muted: #5A6375;   /* smaller grey text (dates, subtitles) */
+      --rule: #D5DAE3;    /* thin divider lines */
+      --accent: #25355A;  /* U of T Blue: name, section titles, links */
       --serif: "Newsreader", Georgia, "Times New Roman", serif;
       --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-     --paper: #F2F4F7;   
-     --ink: #1C2333;    
-     --muted: #5A6375;   
-     --rule: #D5DAE3;    
-     --accent: #25355A;  
-     --serif: "Newsreader", Georgia, "Times New Roman", serif;
-     --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-   }
     }
 
     * { box-sizing: border-box; }
@@ -75,6 +61,7 @@
       line-height: 1.02;
       letter-spacing: -0.025em;
       font-variation-settings: "opsz" 72;
+      color: var(--accent);
     }
 
     .role {
@@ -102,7 +89,7 @@
       display: grid;
       grid-template-columns: 10rem 1fr;
       gap: 2rem;
-      padding: 2.25rem 0;
+      padding: 2.5rem 0;
       border-top: 1px solid var(--rule);
     }
 
@@ -113,26 +100,29 @@
       font-size: 1rem;
       font-weight: 600;
       line-height: 1.4;
+      color: var(--accent);
     }
 
     .body > :first-child { margin-top: 0; }
     .body > :last-child { margin-bottom: 0; }
     .body p { max-width: 36em; }
 
-    .entry + .entry { margin-top: 1.6rem; }
+    /* Space between entries: make the number bigger for more space */
+    .entry + .entry { margin-top: 2.25rem; }
     .entry h3 {
       margin: 0;
       font-size: 1.1875rem;
       font-weight: 600;
       line-height: 1.4;
     }
-    .entry p { margin: 0.35rem 0 0; }
+    .entry p { margin: 0.4rem 0 0; }
     .meta {
       margin: 0.15rem 0 0;
       font-family: var(--sans);
       font-size: 0.9375rem;
       color: var(--muted);
     }
+    .entry .meta + .meta { margin-top: 0.1rem; }
 
     footer {
       padding: 2.5rem 0 4rem;
@@ -161,8 +151,7 @@
       <p class="role">Financial Economics, University of Toronto<br>Macroeconomics and international finance</p>
 
       <ul class="links">
-        <li><a href="cv.pdf">CV (PDF)</a></li>
-        <!-- EDIT: your email and LinkedIn URL -->
+        <li><a href="CV.pdf">CV (PDF)</a></li>
         <li><a href="mailto:salvador.lu@mail.utoronto.ca">Email</a></li>
         <li><a href="https://github.com/lushengfei">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/shengfei-lu-bb0838297/">LinkedIn</a></li>
@@ -170,11 +159,11 @@
     </header>
 
     <main>
+
       <section id="about">
         <h2>About</h2>
         <div class="body">
-     
-          <p>I'm an undergraduate in the Financial Economics Specialist program at the University of Toronto. My research interests are macroeconomics and international finance, and I'm currently working on empirical research using firm-level panel data.</p>
+          <p>I'm an undergraduate in the Financial Economics Specialist program at the University of Toronto. My interests are in macroeconomics and international finance, and I'm currently working on empirical research using firm-level panel data.</p>
           <p>I'm interested in graduate study in economics and in research roles that sit between academia and policy or industry.</p>
         </div>
       </section>
@@ -182,76 +171,80 @@
       <section id="research">
         <h2>Research</h2>
         <div class="body">
-    
+
           <div class="entry">
             <h3>Aging in the Foreign Life</h3>
             <p class="meta">Research Assistant, work in progress, 2026</p>
             <p>A qualitative study on improving the quality of life and sense of belonging of Chinese seniors in Canada.</p>
           </div>
+
           <div class="entry">
             <h3>Electricity Generation Industry Report</h3>
             <p class="meta">Primary Researcher, work in progress, 2026</p>
             <p>An empirical study of the electricity generation industry using panel data in Stata and R.</p>
           </div>
+
           <div class="entry">
             <h3>Eli Lilly and Company Stock Valuation</h3>
             <p class="meta">Financial Statement Analysis, 2026</p>
             <p>A valuation of Eli Lilly's stock based on financial statement analysis, finding it slightly underpriced (by about 0.8%) relative to its market price, with no strong buy or sell signal.</p>
           </div>
+
           <div class="entry">
             <h3>Students' Preferences for Post-secondary Education</h3>
             <p class="meta">Qualitative Research, 2024</p>
             <p>Interviews with peers, finding that parental education level is a key factor shaping students' academic and career decisions.</p>
           </div>
-            
-        </div>
+
         </div>
       </section>
 
       <section id="teaching">
         <h2>Teaching</h2>
         <div class="body">
-        
+
           <div class="entry">
-            <h3>Teaching Assistant, MGEB11: Quantitative Methods in Economics I </h3>
+            <h3>Teaching Assistant, MGEB11: Quantitative Methods in Economics I</h3>
             <p class="meta">University of Toronto, Fall 2026</p>
-            <p class="meta">Supervisor: Laura Turner </p>
+            <p class="meta">Supervisor: Laura Turner</p>
           </div>
+
           <div class="entry">
             <h3>Teaching Assistant, MGEB01: Price Theory</h3>
             <p class="meta">University of Toronto, Winter 2025</p>
-            <p class="meta">Supervisor: Masoud Anjomshoa </p>
+            <p class="meta">Supervisor: Masoud Anjomshoa</p>
           </div>
+
         </div>
       </section>
 
       <section id="education">
         <h2>Education</h2>
         <div class="body">
-         
+
           <div class="entry">
             <h3>University of Toronto, St. George</h3>
             <p class="meta">Financial Economics Specialist, expected 2027</p>
           </div>
+
           <div class="entry">
-            <h3>University of Toronto, Scarborough</h3>
-            <p class="meta">2023 to 2025</p>
+            <h3>University of Toronto Scarborough</h3>
+            <p class="meta">2023 to 2025, before transferring to St. George</p>
           </div>
+
         </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <div class="body">
-     
-          <p>Personal Email: <a href="mailto:gogosally2527@gmail.com">gogosally2527@gmail.com</a>.</p>
-          <p>Institution Email: <a href="mailto:salvador.lu@mail.utoronto.ca">salvador.lu@mail.utoronto.ca</a>.</p>
+          <p>The best way to reach me is by email at <a href="mailto:salvador.lu@mail.utoronto.ca">salvador.lu@mail.utoronto.ca</a>.</p>
         </div>
       </section>
+
     </main>
 
     <footer>
-   
       Last updated October 2026
     </footer>
 
